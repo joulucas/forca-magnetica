@@ -1,0 +1,43 @@
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}
+
+h1{
+    align-content: center;
+    margin: 20px;
+    text-align: center;
+    color: #495057;
+}
+
+label{
+    color: #495057;
+    text-align: right;
+    max-width: 100%; 
+
+}
+.col{
+    max-width: 70%;
+}
+.container{
+    position: relative;
+    float: left;
+    border-width:2px;
+    width:25%;
+    height: auto;
+    left:100px;
+}
+.pow{
+    display: inline-flex;
+    color: #495057;
+}
+.sup{
+    max-width: 30%; 
+    
+}

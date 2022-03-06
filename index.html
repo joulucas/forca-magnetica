@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+
+    <div>
+        <h1>CALCULO FORÇA MAGNETICA</h1>
+    </div>
+    <form>
+
+        <div class="container">
+            <div class="form-check ">
+                <input onclick="marcaDesmarca(this)" class="form-check-input" type="checkbox" name="eletron" checked
+                    id="eletron" value="eletron">
+                <label class="form-check-label" for="eletron">qelétron = - 1,6x10<sup>-19</sup> (C)</label>
+                <p></p>
+                <input onclick="marcaDesmarca(this)" class="form-check-input" type="checkbox" name="proton" id="proton"
+                    value="proton">
+                <label class="form-check-label" for="proton">qpróton = + 1,6x10<sup>-19 </sup>(C)</label>
+            </div>
+        </div>
+        <div class="container">
+            <div>
+                <label for="vetor">Vetor velocidade(v) - (m/s)</label>
+                <p></p>
+            </div>
+
+            <div class="col">
+                <label class="pow">
+                    <input type="text" class="form-control" placeholder="I" id="ax" />
+                    <label class="pow"> x10</label>
+                    <sup class="sup">
+                        <input type="number" class="form-control" placeholder="1" id="pax" value="1"/>
+                    </sup>
+                </label>
+            </div>
+            <p></p>
+            <div class="col">
+                <label class="pow">
+                    <input type="number" class="form-control" placeholder="J" id="ay">
+                    <label class="pow"> x10</label>
+                    <sup class="sup">
+                        <input type="number" class="form-control" placeholder="1" id="pay" value="1" />
+                    </sup>
+                </label>
+            </div>
+            <p></p>
+            <div class="col">
+                <label class="pow">
+                    <input type="number" class="form-control" placeholder="K" id="az">
+                    <label class="pow"> x10</label>
+                    <sup class="sup">
+                        <input type="number" class="form-control" placeholder="1" id="paz" value="1" />
+                    </sup>
+                </label>
+            </div>
+        </div>
+
+        <div class="container">
+
+            <div>
+                <label for="vetor">Vetor campo magnetico(B) - (T)</label>
+                <p></p>
+            </div>
+
+            <div class="col">
+                <label class="pow">
+                    <input type="number" class="form-control" placeholder="I" id="bx" />
+                    <label class="pow"> x10</label>                
+                    <sup class="sup">
+                        <input type="number" class="form-control" placeholder="1" id="pbx" value="1" />
+                    </sup>
+
+                </label>
+            </div>
+            <p></p>
+            <div class="col">
+                <label class="pow">
+                    <input type="number" class="form-control" placeholder="J" id="by">
+                    x10
+                    <sup class="sup">
+                    <input type="number" class="form-control" placeholder="1" id="pby" value="1" />
+                    </sup>
+                </label>
+            </div>
+            <p></p>
+            <div class="col">
+                <label class="pow">
+                    <input type="number" class="form-control" placeholder="K" id="bz">
+                    x10
+                    <sup class="sup">
+                    <input type="number" class="form-control" placeholder="1" id="pbz" value="1" />
+                    </sup>
+                </label>
+            </div>
+        </div>
+
+        <div class="container">
+            <button type="button" class="btn btn-primary" onclick="calcular()">Calcular</button>
+            <button type="reset" class="btn btn-warning" >Limpar</button>
+        </div>
+    </form>
+</body>
+
+</html>
